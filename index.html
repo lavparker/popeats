@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <base href="/">
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./dist/main.js"></script>
+    
+    <title>Pop Eats</title>
+    <div class="social_media_links">
+        <p>Hire Me!</p>
+        <a target="_blank" id="email" href="mailto:lavinia.parker@outlook.com?body=Hi%20La%20Vinia,&nbsp;This%20is%20why%20I%20want%20to%20hire%20you!">
+            <img src="./images/enve.png" alt="email logo">
+        </a>
+        <a target="_blank" id="linkedin" href="https://www.linkedin.com/in/la-vinia-parker-ab93885a">
+            <img src="./images/linkedin.png" alt="linkedin social media logo" />
+        </a>
+        <a target="_blank" id="github" href="https://github.com/lavparker">
+            <img src="./images/github.png" alt="github social media logo" />
+        </a>
+        <a target="_blank" id="instagram" href="https://www.instagram.com/vinia.tech/">
+            <img src="./images/icons8-instagram-64.png" alt="instagram social media logo" />
+        </a>
+        <a target="_blank" id="wellfound" href="https://angel.co/u/la-vinia-parker"> <img src="./images/icons8-angellist-50.png" alt="wellfound social media logo"></a> 
+        </a>
+    
+        <div class="author">
+            <p>by La Vinia Parker</p>
+        </div>
+    
+    </div>
+
+    <button class="btn button">Instructions</button>
+
+    
+
+    <style>
+        body{
+             background-image: url("/images/ocean1.jpeg");
+             background-size:cover;
+        }
+    </style>
+  
+</head>
+
+<body>
+
+    <section class="modal hidden">
+        <div class="flex">
+            <button class="btn-close">⨉</button>
+        </div>
+        <div class="inner-modal">
+            <p class="welcome">Welcome to Pop Eats!</p>
+            <br>
+            <p class="how-to">How to Use:</p>
+            <p class="paragraph">
+                Hover over any country to see the name of the country. If you
+                already know where the country you are looking for
+                is located, click on the country and the country's national dish/favorite
+                foods will appear above the map! If you aren't quite sure where the 
+                country is, use the dropdown to find the country's name and its national 
+                dish / favorite foods.
+            </p>
+            <br>
+            <div class="modal-footer">
+                <h3>Enjoy!</h3>
+            </div>
+        </div>
+    </section>
+    
+    <div class="overlay hidden"></div>
+    
+
+    <div class="country-reveal">
+
+    </div>
+
+
+</body>
+
+<div class="title">
+    <h1>Pop Eats</h1>
+</div>
+
+    <!-- <button class="btn button">Instructions</button> -->
+
+
+<select name="" id="selector" >
+    <option class="options" value="" selected>Click Here to Select a Country!</option>
+</select>
+   
+
+<div class="country_names">
+    
+</div>
+<div class="tooltip" id="country_info_display">
+    <div id="food_displayer" data-tooltip="Select a Country!">Select a Country!</div>
+</div>
+
+</html>
+
+
